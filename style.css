@@ -49,6 +49,7 @@
   height: 300px;
   pointer-events: none;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .Picture-img-video {
