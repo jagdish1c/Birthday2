@@ -222,6 +222,7 @@ body::before {
   text-decoration: line-through;
   font-size: 22px;
   color: #000;
+  margin-top: -6px;
 }
 .heart {
   font-size: 20px;
@@ -232,7 +233,7 @@ body::before {
   color: #d76a3c;
   font-family: 'Comic Sans MS', cursive;
   letter-spacing: 1px;
-  margin-top: -32px;
+  margin-top: -36px;
 }
 
 /* Heart animation */
