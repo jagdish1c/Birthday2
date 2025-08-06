@@ -118,6 +118,7 @@
 #myDialog {
   border: none;
   border-radius: 40px;
+  background: #9c7444;
 }
 
 #myDialog::backdrop {
@@ -129,23 +130,27 @@
 /* Dialog scrollbar styling */
 #myDialog::-webkit-scrollbar {
   width: 5px;
-  border-radius: 4%;
+  border-radius: 50%;
+  z-index: 99999999;
 }
 
 #myDialog::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 4%;
+  background: #a47c4b;
+  border-radius: 50%;
   margin: 30px 0;
+  z-index: 99999999;
 }
 
 #myDialog::-webkit-scrollbar-thumb {
   background:#802c2cb2;
-  border-radius: 10%;
+  border-radius: 20%;
+  z-index: 99999999;
 }
 
 #myDialog::-webkit-scrollbar-thumb:hover {
-  background:#802c2cb2;
-  border-radius: 10%;
+  background:#3e1515b2;
+  border-radius: 20%;
+  z-index: 99999999;
 }
 
 /* --------------------- */
@@ -238,12 +243,20 @@ body::before {
 
 /* Heart animation */
 .heart {
-  /* position: fixed; */
   color: #ff6b6b;
   font-size: 20px;
   pointer-events: none;
   z-index: 1000;
   animation: heartFloat 2s ease-out infinite;
+}
+.paper_bg_img{
+  width: 100%;
+  height: 254%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 40px 0px 0px 40px;
 }
 
 @keyframes heartFloat {
@@ -318,5 +331,14 @@ body::before {
 
   .dialogButton{
     padding: 0px;
+  }
+
+  .paper_bg_img{
+    position: absolute;
+    z-index: -1;
+    border-radius: inherit;
+    width: 100%;
+    object-fit: cover;
+    height: 416%;
   }
 }
