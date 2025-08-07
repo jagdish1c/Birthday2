@@ -140,7 +140,7 @@
 .bgimg{
   object-fit: cover;
   border-radius: 22px;
-  height: 84px;
+  height: 110px;
   width: 286px;
 }
 
@@ -260,8 +260,7 @@ body::before {
 }
 .paper_bg_img{
   width: 100%;
-  /* height: 286%;  Uncomment this if u un-comment spotify player */
-  height: 267%;
+  height: 286%;  
   position: absolute;
   z-index: -1;
   top: 0;
@@ -419,11 +418,13 @@ audio {
     border-radius: inherit;
     width: 100%;
     object-fit: cover;
-    /* height: 470%;  Uncomment this if u un-comment spotify player */
-    height: 417%;
-
+    height: 432%;
   }
-
+.bgimg{
+  border-radius: 14px;
+    height: 70px;
+    width: 222px;
+}
   .spotify_picture_div {
     width: 300px;
   }
