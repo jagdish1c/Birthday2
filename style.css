@@ -251,7 +251,7 @@ body::before {
 .paper_bg_img{
   width: 100%;
   /* height: 286%;  Uncomment this if u un-comment spotify player */
-  height: 266%;
+  height: 267%;
   position: absolute;
   z-index: -1;
   top: 0;
