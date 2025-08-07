@@ -54,6 +54,10 @@
 
 .Picture-img-video {
   border-radius: 20px;
+  width: 100%;
+  /* height: auto; */
+  object-fit: contain;
+  background: #fcf0e2;
 }
 
 .Picture-note {
@@ -132,6 +136,12 @@
   width: 5px;
   border-radius: 50%;
   z-index: 99999999;
+}
+.bgimg{
+  object-fit: cover;
+  border-radius: 22px;
+  height: 84px;
+  width: 286px;
 }
 
 #myDialog::-webkit-scrollbar-track {
@@ -377,7 +387,7 @@ audio {
   
   .Picture-img-video {
     width: 100%;
-    height: auto;
+    /* height: auto; */
   }
   
   .Picture-note-video {
