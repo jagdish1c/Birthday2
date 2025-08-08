@@ -1,36 +1,8 @@
-// const audio = document.getElementById('backgroundMusic');
-// const birthdayMusic = document.getElementById('birthdayMusic');
-
-// document.getElementById('dialogBtn').onclick = () => {
-//   console.log("Clicked")
-//   document.getElementById('myDialog').showModal();
-//   document.getElementById('myDialog').scrollTop = 0;
-//   birthdayMusic.pause();
-//   audio.muted = false;
-//   audio.play();
-// };
-
-// document.getElementById('closeBtn').onclick = () => {
-//   document.getElementById('myDialog').close();
-//   audio.pause();
-//   audio.currentTime = 0;
-//   birthdayMusic.play();
-// };
-
-// document.querySelector('.Picture-note-video span').onclick = () => {
-//   document.getElementById('myDialog').showModal();
-//   document.getElementById('myDialog').scrollTop = 0;
-//   birthdayMusic.pause();
-//   audio.muted = false;
-//   audio.play();
-// };
-
 
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const audio = document.getElementById('backgroundMusic');
   const birthdayMusic = document.getElementById('birthdayMusic');
   const dialog = document.getElementById('myDialog');
 
