@@ -137,11 +137,10 @@
   border-radius: 50%;
   z-index: 99999999;
 }
-.bgimg{
-  object-fit: cover;
-  border-radius: 22px;
-  height: 110px;
-  width: 286px;
+.bg_video{
+  object-fit: inherit;
+  border-radius: 20px;
+  height: 80px;
 }
 
 #myDialog::-webkit-scrollbar-track {
@@ -386,7 +385,6 @@ audio {
   
   .Picture-img-video {
     width: 100%;
-    /* height: auto; */
   }
   
   .Picture-note-video {
@@ -418,13 +416,15 @@ audio {
     border-radius: inherit;
     width: 100%;
     object-fit: cover;
-    height: 432%;
+    height: 430%;
   }
-.bgimg{
-  border-radius: 14px;
-    height: 70px;
-    width: 222px;
-}
+
+  .bg_video{
+    border-radius: 14px;
+    height: 60px;
+    width: 214px;
+  }
+
   .spotify_picture_div {
     width: 300px;
   }

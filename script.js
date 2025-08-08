@@ -36,8 +36,6 @@ function updateElementPosition(element, event) {
   // Play birthday music when pic1 is moved
   if (element.id === 'pic1') {
     const birthdayMusic = document.getElementById('birthdayMusic');
-    const backgroundMusic = document.getElementById('backgroundMusic');
-    backgroundMusic.pause();
     birthdayMusic.play().catch(e =>console.log("Error while playing music"));
   }
 }
@@ -109,11 +107,9 @@ pictures.forEach(picture => {
 // Video controls for birthday music
 const video = document.querySelector('.Picture-img-video');
 const birthdayMusic = document.getElementById('birthdayMusic');
-const backgroundMusic = document.getElementById('backgroundMusic');
 
 if (video && birthdayMusic) {
   video.addEventListener('play', () => {
     birthdayMusic.pause();
-    backgroundMusic.pause();
   });
 }

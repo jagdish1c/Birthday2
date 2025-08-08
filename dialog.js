@@ -72,9 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
     dialog.showModal();
     dialog.scrollTop = 0;
     birthdayMusic.pause();
-    audio.muted = false;
-    audio.play();
-    audio.currentTime = 0;
+    
+    const perfectVideo = document.getElementById('perfect_video');
+    if (perfectVideo) {
+      perfectVideo.play();
+    }
   };
 
   const resetCardPositions = () => {
@@ -91,6 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const closeDialog = () => {
+    const perfectVideo = document.getElementById('perfect_video');
+    if (perfectVideo) {
+      perfectVideo.pause();
+      perfectVideo.currentTime = 0;
+    }
     location.reload();
     resetCardPositions();
   };
